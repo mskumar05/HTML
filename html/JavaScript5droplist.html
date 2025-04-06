@@ -1,0 +1,31 @@
+<html>
+<head>
+<script language="javascript">
+ function F1()
+ {
+ if(DropCountryList.value=="-Select-")
+ {
+ txtMsg.value="Please select your country"
+ }
+ else
+ {
+ txtMsg.value=DropCountryList.value
+ }
+}
+</script>
+</head>
+<body>
+<h1>Select your country</h1>
+<select id="DropCountryList">
+<option>-Select-</option>
+<option>India</option>
+<option>USA</option>
+<option>UK</option>
+</select>
+</br></br>
+<input type="button"id="btnSubmit"value="Submit"onclick="F1()"/>
+</br></br>
+Your country is:
+<input type="text"id="txtMsg"/>
+</body>
+</html>

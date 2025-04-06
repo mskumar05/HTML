@@ -1,0 +1,38 @@
+<html>
+<head>
+<script language="javascript">
+function F1()
+ {
+ if(rtelugu.checked)
+ {
+ txtMsg.value=rtelugu.value
+ }
+ else if(rtamil.checked)
+ {
+ txtMsg.value=rtamil.value
+ }
+ else if(rurdhu.checked)
+ {
+ txtMsg.value=rurdhu.value
+ }
+ else
+ {
+ txtMsg.value="Please select your language"
+ }
+}
+</script>
+</head>
+<body>
+<h1>Select your language</h1>
+<input type="radio"id="rtelugu"value="telugu"name="lang"/>Telugu
+</br></br>
+<input type="radio"id="rtamil"value="tamil"name="lang"/>Tamil
+</br></br>
+<input type="radio"id="rurdhu"value="urdu"name="lang"/>Urdu
+</br></br>
+<input type="button"id="btnSubmit"value="Submit"onclick="F1()"/>
+</br></br>
+Your language is:
+<input type="text"id="txtMsg"/>
+</body>
+</html>
